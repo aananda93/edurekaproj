@@ -1,5 +1,4 @@
 FROM devopsedu/webapp
+RUN rm /var/www/html/index.php
 ADD . /var/www/html
-RUN rm /var/www/html/index.html
-EXPOSE 8081 
 CMD apachectl -D FOREGROUND
